@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav class="navbar">
+        <div class="navbar-esquerda">
+            <h1>Portifólio</h1>
+        </div>
+        <div class="navbar-direita">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contatos">Contato</a>
+        </div>
+    </nav>
+<main>
+    <section class="apresentacao" id="sobre">
+        <div class="carta-container" onclick="virarCarta()">
+            <div class="carta-inner" id="carta">
+                <div class="carta-frente">
+                    <img src="carta.png" class="carta">
+                    <div class="texto-sobre-carta">
+                        <h1>Desenvolvedora</h1>
+                        <h2>HTML|CSS|Python|JavaScript</h2>
+                        <h3>VSCode|PyCharm</h3>
+                        <h4>SQL</h4>
+                        <h5>Resolução de Problemas</h5>
+                    </div>
+                </div>
+                <div class="carta-verso">
+                    <img src="cartaverso.png"  alt="verso da carta">
+                </div>
+            </div>
+        </div>
+        <div class="texto-apresentacao">
+            <h1>Olá</h1>
+            <h2>Eu me chamo Camily!</h2>
+            <h3>Sobre mim</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum placeat ex quidem accusamus inventore sit sed. Totam quae tempore ullam corrupti consequuntur, quo, velit veniam dolor officiis incidunt culpa!</p>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h1>Hard Skills</h1>
+
+        <div class="habilidade-bloco front">
+            <h2>Front-end</h2>
+            <img src="logo/html.png" alt="HTML" class="habilidade-logo">
+            <img src="logo/css.png" alt="CSS" class="habilidade-logo">
+            <img src="logo/javascript.png" alt="JavaScript" class="habilidade-logo">
+        </div>
+
+        <div class="habilidade-bloco back">
+            <h2>Back-end</h2>
+            <img src="logo/python.png" alt="Python" class="habilidade-logo">
+        </div>
+
+        <div class="habilidade-bloco database">
+            <h2>Banco de Dados</h2>
+            <img src="logo/sql.png" class="habilidade-logo">
+            <img src="logo/mysql.png" class="habilidade-logo">
+        </div>
+
+        <div class="habilidade-bloco tools">
+            <h2>Ferramentas</h2>
+            <img src="logo/vscode.png" class="habilidade-logo">
+            <img src="logo/pycharm.png" class="habilidade-logo">
+        </div>
+
+        <div class="habilidade-bloco controll">
+            <h2>Controle de Versão</h2>
+            <img src="logo/github.png" class="habilidade-logo">
+            <img src="logo/git.png" class="habilidade-logo">
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h1>Projetos</h1>
+
+        <div class="bloco-projeto">
+            <img src="/projetos/projeto1.png" class="logo-projeto">
+            <img src="/projetos/projeto1.png" class="logo-projeto">
+            <img src="/projetos/projeto1.png" class="logo-projeto">
+            <img src="/projetos/projeto1.png" class="logo-projeto">
+        </div>
+    </section>
+
+    <section class="contatos" id="contatos">
+        <h1>Contatos</h1>
+        <div class="contatos-container">
+        
+            <div class="contato-item">
+            <img src="/contatos/telefone.png" alt="ícone telefone">
+            <h2>Telefone</h2>
+            <p>(47) 99643-4705</p>
+            </div>
+
+            <div class="contato-item">
+            <img src="/contatos/email.png" alt="ícone email">
+            <h2>E-mail</h2>
+            <p>camilybarcellos594@mail.com</p>
+            </div>
+
+            <div class="contato-item">
+            <img src="/contatos/linkedin.png" alt="ícone linkedin">
+            <h2>LinkedIn</h2>
+            <p>Camily Eduarda Barcellos</p>
+            </div>
+
+            <div class="contato-item">
+            <img src="/contatos/github.png" alt="ícone github">
+            <h2>GitHub</h2>
+            <p>@CamilyB</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

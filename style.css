@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: url(fundo.png);
+    background-size: cover; /*Cobre toda a tela*/
+    background-repeat: no-repeat; /*evita repetições*/
+    background-attachment: fixed; /*fica fixa*/
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.navbar {
+    position: fixed; /*Faz com que a navbar fique fixa no topo*/
+    top: 0;          /*Cola no topo*/
+    width: 100%;    /*Ocupa toda a largura*/
+    background-color: rgba(56, 42, 95, 0.164);
+    display: flex;  /*Coloca os itens lado a lado*/
+    justify-content:space-between; /*Centraliza os itens*/
+    align-items: center; /*alinha verticalmente*/
+    padding: 15px 40px;
+    z-index: 1000;   /*Garante que fica acima da class conteudo*/
+}
+
+.navbar-esquerda h1 {
+    color: rgb(131, 107, 163);
+    margin: 0;
+    margin-left: 70px;
+}
+
+.navbar-direita {
+    display: flex;
+    gap: 30px
+}
+
+.navbar-direita a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-direita a:hover{
+    color: rgb(45, 37, 92);
+}
+
+.carta-frente {
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.carta-verso {
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.carta-container {
+    position: relative; /*ponto de referencia para o texto*/
+    display: inline-block; /*só ocupe o espaço da imagem*/
+    perspective: 1000px;
+    width: 700px;
+    height: 550px;
+}
+
+.carta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.carta-container.virada .carta-inner {
+    transform: rotateY(180deg);
+}
+
+.carta-frente, .carta-verso {
+    position: absolute; /*faz as cartas sobrepor*/
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carta-frente {
+    transform: rotateY(180deg);
+}
+
+.carta-frente img, .carta-verso img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.texto-sobre-carta h1{
+    position: absolute; /*posiciona em relação ao container carta*/
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centraliza exatamente no meio*/
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black; /*sombra no texto*/
+    z-index: 1;
+}
+
+.texto-sobre-carta h2{
+    position: absolute;
+    top: 76%;
+    left: 22%;
+    font-size: 18px;
+}
+
+.texto-sobre-carta h3{
+    position: absolute;
+    top: 80%;
+    left: 32%;
+    font-size: 20px;
+}
+
+.texto-sobre-carta h4{
+    position: absolute;
+    top: 84%;
+    left: 45%;
+    font-size: 20px;
+}
+
+.texto-sobre-carta h5{
+    position: absolute;
+    top: 88%;
+    left: 24%;
+    font-size: 20px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px 50px 50px;
+    gap: 60px;
+}
+
+.texto-apresentacao h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-apresentacao h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ccc;
+    margin-left: 650px;
+    margin-top: 90px;
+}
+
+.texto-apresentacao p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 350px;
+    margin-top: 60px;
+}
+
+.conteudo {
+    margin-top: 80px;
+    padding: 100px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 80px auto 0 auto;
+}
+
+.habilidades h1{
+    font-size: 50px;
+    margin: 200px auto 100px 800px;
+}
+
+.habilidades h2 {
+    font-size: 28px;
+    margin-left: 200px;
+    margin-bottom: 70px;
+}
+
+.habilidade-logo {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+    border-radius: 20px;
+    margin: 0px auto 70px 700px;
+    margin-left: 270px;
+}
+
+.projetos h1{
+    font-size: 50px;
+    margin: 80px auto 100px 800px;
+}
+
+.logo-projeto {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    border-radius: 10px;
+    margin: 70px 80px 70px 130px;
+}
+
+.contatos h1{
+    font-size: 50px;
+    margin: 80px auto 100px 850px;
+}
+
+.contatos-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px
+}
+
+.contato-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-item img {
+    width: 80px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.contato-item h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contato-item p {
+    font: 16px;
+    margin-bottom: 400px;
+}
