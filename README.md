@@ -30,3 +30,6 @@ Aqui você encontrará uma apresentação visual das minhas habilidades, projeto
 Você pode acessar diretamente pelo GitHub Pages (em breve) ou clonar este repositório:
 ```bash
 git clone https://github.com/CamilvB/portfolio.git
+````
+##
+🐾Feito com 💜 por Camily Barcellos.
