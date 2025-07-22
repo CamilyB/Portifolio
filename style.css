@@ -215,9 +215,64 @@
     align-items: center;
     width: 190px;
     border-radius: 20px;
-    margin: 0px auto 70px 700px;
-    margin-left: 270px;
+    margin: 0px auto 70px 70px;
 }
+
+.carrossel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20;
+}
+
+.carrossel-faixa {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carrossel-faixa h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px auto 80px auto;
+}
+
+.habilidade-bloco {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+.seta-direita {
+    right: 10px;
+}
+
+.seta:hover {
+    color: #000;
+}
+
 
 .bloco-projeto {
     display: grid;
